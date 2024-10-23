@@ -5,11 +5,11 @@ import java.util.List;
 public class ClubDeportivo {
 
 	private String nombre;
-	private List<Partido> partido;
+	private List<Partido> partidos;
 
 	public ClubDeportivo(String nombre) {
 		this.nombre = nombre;
-		this.partido = new ArrayList<>();
+		this.partidos = new ArrayList<>();
 	}
 
 	public String getNombre() {
