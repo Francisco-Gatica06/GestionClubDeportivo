@@ -24,9 +24,9 @@ public class Equipo {
 	}
 
 	public boolean registrarDeportista(Deportista deportista) {
-		// TODO - implement Equipo.registrarDeportista
-		throw new UnsupportedOperationException();
-	}
+		this.deportistas.add(deportista);
+        return false;
+    }
 
 	public boolean modificarDeportista(Deportista deportista) {
 		// TODO - implement Equipo.modificarDeportista
