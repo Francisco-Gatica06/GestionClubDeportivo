@@ -1,9 +1,17 @@
 package GestionClubDeportivo;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Equipo {
 
-	private string nombre;
+	private String nombre;
+	private List<Deportista> deportistas;
 
+
+	public Equipo(String nombre) {
+		this.nombre = nombre;
+		this.deportistas = new ArrayList<>();
+	}
 	/**
 	 * 
 	 * @param deportista
@@ -58,7 +66,7 @@ public class Equipo {
 		throw new UnsupportedOperationException();
 	}
 
-	public string getNombre() {
+	public String getNombre() {
 		return this.nombre;
 	}
 
@@ -66,7 +74,7 @@ public class Equipo {
 	 * 
 	 * @param nombre
 	 */
-	public void setNombre(string nombre) {
+	public void setNombre(String nombre) {
 		this.nombre = nombre;
 	}
 

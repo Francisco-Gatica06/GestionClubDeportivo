@@ -1,46 +1,37 @@
 package GestionClubDeportivo;
+import java.util.ArrayList;
+import java.util.List;
 
 public class ClubDeportivo {
 
-	private string nombre;
+	private String nombre;
+	private List<Partido> partido;
 
-	public string getNombre() {
+	public ClubDeportivo(String nombre) {
+		this.nombre = nombre;
+		this.partido = new ArrayList<>();
+	}
+
+	public String getNombre() {
 		return this.nombre;
 	}
 
-	/**
-	 * 
-	 * @param nombre
-	 */
-	public void setNombre(string nombre) {
+	public void setNombre(String nombre) {
 		this.nombre = nombre;
 	}
 
-	/**
-	 * 
-	 * @param partido
-	 */
 	public boolean registrarPartido(Partido partido) {
 		// TODO - implement ClubDeportivo.registrarPartido
 		throw new UnsupportedOperationException();
 	}
 
-	/**
-	 * 
-	 * @param partido
-	 */
 	public boolean modificarPartido(Partido partido) {
 		// TODO - implement ClubDeportivo.modificarPartido
 		throw new UnsupportedOperationException();
 	}
 
-	/**
-	 * 
-	 * @param partido
-	 */
 	public boolean eliminarPartido(Partido partido) {
 		// TODO - implement ClubDeportivo.eliminarPartido
 		throw new UnsupportedOperationException();
 	}
-
 }

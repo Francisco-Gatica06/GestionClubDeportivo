@@ -2,58 +2,51 @@ package GestionClubDeportivo;
 
 public class Partido {
 
-	private string local;
-	private string visitante;
-	private string resultado;
-	private string fecha;
+	private String local;
+	private String visitante;
+	private String resultado;
+	private String fecha;
 	private Cancha cancha;
-	private string deporte;
+	private String deporte;
 
-	public string getLocal() {
+	public Partido(String local, String visitante, String resultado, String fecha, Cancha cancha, String deporte) {
+		this.local = local;
+		this.visitante = visitante;
+		this.resultado = resultado;
+		this.fecha = fecha;
+		this.cancha = cancha;
+		this.deporte = deporte;
+	}
+
+	public String getLocal() {
 		return this.local;
 	}
 
-	/**
-	 * 
-	 * @param local
-	 */
-	public void setLocal(string local) {
+	public void setLocal(String local) {
 		this.local = local;
 	}
 
-	public string getVisitante() {
+	public String getVisitante() {
 		return this.visitante;
 	}
 
-	/**
-	 * 
-	 * @param visitante
-	 */
-	public void setVisitante(string visitante) {
+	public void setVisitante(String visitante) {
 		this.visitante = visitante;
 	}
 
-	public string getResultado() {
+	public String getResultado() {
 		return this.resultado;
 	}
 
-	/**
-	 * 
-	 * @param resultado
-	 */
-	public void setResultado(string resultado) {
+	public void setResultado(String resultado) {
 		this.resultado = resultado;
 	}
 
-	public string getFecha() {
+	public String getFecha() {
 		return this.fecha;
 	}
 
-	/**
-	 * 
-	 * @param fecha
-	 */
-	public void setFecha(string fecha) {
+	public void setFecha(String fecha) {
 		this.fecha = fecha;
 	}
 
@@ -61,23 +54,15 @@ public class Partido {
 		return this.cancha;
 	}
 
-	/**
-	 * 
-	 * @param cancha
-	 */
 	public void setCancha(Cancha cancha) {
 		this.cancha = cancha;
 	}
 
-	public string getDeporte() {
+	public String getDeporte() {
 		return this.deporte;
 	}
 
-	/**
-	 * 
-	 * @param deporte
-	 */
-	public void setDeporte(string deporte) {
+	public void setDeporte(String deporte) {
 		this.deporte = deporte;
 	}
 

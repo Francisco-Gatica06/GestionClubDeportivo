@@ -2,56 +2,47 @@ package GestionClubDeportivo;
 
 public class Deportista {
 
-	private string nombre;
-	private string apellido;
-	private string celular;
-	private string deporte;
+	private String nombre;
+	private String apellido;
+	private String celular;
+	private String deporte;
 
-	public string getNombre() {
+	public Deportista(String nombre, String apellido, String celular, String deporte) {
+		this.nombre = nombre;
+		this.apellido = apellido;
+		this.celular = celular;
+		this.deporte = deporte;
+	}
+
+	public String getNombre() {
 		return this.nombre;
 	}
 
-	/**
-	 * 
-	 * @param nombre
-	 */
-	public void setNombre(string nombre) {
+	public void setNombre(String nombre) {
 		this.nombre = nombre;
 	}
 
-	public string getApellido() {
+	public String getApellido() {
 		return this.apellido;
 	}
 
-	/**
-	 * 
-	 * @param apellido
-	 */
-	public void setApellido(string apellido) {
+	public void setApellido(String apellido) {
 		this.apellido = apellido;
 	}
 
-	public string getCelular() {
+	public String getCelular() {
 		return this.celular;
 	}
 
-	/**
-	 * 
-	 * @param celular
-	 */
-	public void setCelular(string celular) {
+	public void setCelular(String celular) {
 		this.celular = celular;
 	}
 
-	public string getDeporte() {
+	public String getDeporte() {
 		return this.deporte;
 	}
 
-	/**
-	 * 
-	 * @param deporte
-	 */
-	public void setDeporte(string deporte) {
+	public void setDeporte(String deporte) {
 		this.deporte = deporte;
 	}
 

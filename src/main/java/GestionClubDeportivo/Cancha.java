@@ -2,12 +2,19 @@ package GestionClubDeportivo;
 
 public class Cancha {
 
-	private string tipoSuperficie;
-	private string ubicacion;
+	private String tipoSuperficie;
+	private String ubicacion;
 	private int capacidad;
 	private boolean disponible;
 
-	public string getTipoSuperficie() {
+	public Cancha(String tipoSuperficie, String ubicacion, int capacidad, boolean disponible) {
+		this.tipoSuperficie = tipoSuperficie;
+		this.ubicacion = ubicacion;
+		this.capacidad = capacidad;
+		this.disponible = disponible;
+	}
+
+	public String getTipoSuperficie() {
 		return this.tipoSuperficie;
 	}
 
@@ -15,11 +22,11 @@ public class Cancha {
 	 * 
 	 * @param tipoSuperficie
 	 */
-	public void setTipoSuperficie(string tipoSuperficie) {
+	public void setTipoSuperficie(String tipoSuperficie) {
 		this.tipoSuperficie = tipoSuperficie;
 	}
 
-	public string getUbicacion() {
+	public String getUbicacion() {
 		return this.ubicacion;
 	}
 
@@ -27,7 +34,7 @@ public class Cancha {
 	 * 
 	 * @param ubicacion
 	 */
-	public void setUbicacion(string ubicacion) {
+	public void setUbicacion(String ubicacion) {
 		this.ubicacion = ubicacion;
 	}
 
